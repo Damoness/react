@@ -265,7 +265,7 @@ export function updateContainer(
       warnIfNotScopedWithMatchingAct(current);
     }
   }
-  const lane = requestUpdateLane(current);
+  const lane = requestUpdateLane(current); //获取任务优先级
 
   if (enableSchedulingProfiler) {
     markRenderScheduled(lane);
@@ -295,7 +295,7 @@ export function updateContainer(
     }
   }
 
-  const update = createUpdate(eventTime, lane);
+  const update = createUpdate(eventTime, lane); //创建更新任务
   // Caution: React DevTools currently depends on this property
   // being called "element".
   update.payload = {element};

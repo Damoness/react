@@ -69,7 +69,7 @@ const OffscreenLanePriority: LanePriority = 1;
 
 export const NoLanePriority: LanePriority = 0;
 
-const TotalLanes = 31;
+const TotalLanes = 31; //位数越小的赛道，代表的优先级越高。
 
 export const NoLanes: Lanes = /*                        */ 0b0000000000000000000000000000000;
 export const NoLane: Lane = /*                          */ 0b0000000000000000000000000000000;

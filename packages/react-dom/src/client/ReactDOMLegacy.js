@@ -172,6 +172,7 @@ function warnOnInvalidCallback(callback: mixed, callerName: string): void {
   }
 }
 
+//渲染根子树
 function legacyRenderSubtreeIntoContainer(
   parentComponent: ?React$Component<any, any>,
   children: ReactNodeList,
